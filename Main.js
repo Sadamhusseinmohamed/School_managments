@@ -17,3 +17,12 @@ document.getElementById('login-form').addEventListener('submit', function (event
             document.getElementById("error-message").style.display = "block";
       }
 });
+
+// Navbar Button Click Handlers
+document.getElementById('profile-btn').addEventListener('click', function () {
+      alert("Profile clicked!");
+});
+
+document.getElementById('notifications-btn').addEventListener('click', function () {
+      alert("Notifications clicked!");
+});
