@@ -18,11 +18,22 @@ document.getElementById('login-form').addEventListener('submit', function (event
       }
 });
 
-// Navbar Button Click Handlers
-document.getElementById('profile-btn').addEventListener('click', function () {
-      alert("Profile clicked!");
-});
+// / Mocking the Data for Dashboard Stats
+document.addEventListener('DOMContentLoaded', function () {
+      // Simulate fetching data from a database or API
+      setTimeout(function () {
+            document.getElementById('students-count').textContent = "150";
+            document.getElementById('teachers-count').textContent = "25";
+            document.getElementById('classes-count').textContent = "10";
+            document.getElementById('courses-count').textContent = "30";
+      }, 1000); // Simulate a delay in loading the data (1 second)
 
-document.getElementById('notifications-btn').addEventListener('click', function () {
-      alert("Notifications clicked!");
+      // Profile and Notifications Button Handlers
+      document.getElementById('profile-btn').addEventListener('click', function () {
+            alert("Profile clicked!");
+      });
+
+      document.getElementById('notifications-btn').addEventListener('click', function () {
+            alert("Notifications clicked!");
+      });
 });
